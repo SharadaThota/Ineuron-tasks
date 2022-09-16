@@ -1,0 +1,664 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ae049049",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "q1 :\n",
+    "ineruon \n",
+    "ineruon ineruon \n",
+    "ineruon ineruon ineruon\n",
+    "ineruon ineruon ineruon ineruon\n",
+    "\n",
+    "q2 - \n",
+    "\n",
+    "          ineruon\n",
+    "    ineruon      ineruon\n",
+    "ineruon\t\tineruon \tineruon\n",
+    "\tineruon\t\t ineruon\n",
+    "\t\t  ineruon\n",
+    "\n",
+    "l = [[1,2,3,4] , (2,3,4,5,6) , (3,4,5,6,7) , set([23,4,5,45,4,4,5,45,45,4,5]) , {'k1' :\"sudh\" , \"k2\" : \"ineuron\",\"k3\":\n",
+    "            \"kumar\" , 3:6 , 7:8} , [\"ineuron\" , \"data science \"]]\n",
+    "\n",
+    "q3 : Try to extract all the list entity \n",
+    "q4 : Try to extract all the dict enteties\n",
+    "q5 : Try to extract all the tuples entities\n",
+    "q6 : Try to extract all the numerical data it may b a part of dict key and values \n",
+    "q7 : Try to give summation of all the numeric data \n",
+    "q8 : Try to filter out all the odd values out all numeric data which is a part of a list \n",
+    "q9 : Try to extract \"ineruon\" out of this data\n",
+    "q10 :Try to find out a number of occurances of all the data \n",
+    "__\n",
+    "q12 : Try to filter out all the string data \n",
+    "q13 : Try to Find  out alphanum in data\n",
+    "q14 : Try to find out multiplication of all numeric value in  the individual collection inside dataset \n",
+    "q15 : Try to unwrape all the collection inside collection and create a flat list \n",
+    "    \n",
+    "    \n",
+    "before 29th may 2022 3 PM IST you have to send an answer to me or to shivan \n",
+    "sudhanshu@ineuron.ai\n",
+    "shivan@ineuron.ai\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "95f707e8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1)q1 :\n",
+    "ineruon \n",
+    "ineruon ineruon \n",
+    "ineruon ineruon ineruon\n",
+    "ineruon ineruon ineruon ineruon\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "52e59dfe",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a string : \n",
+      "6\n",
+      " Enter a number\n",
+      "6\n",
+      "6  \n",
+      "6  6  \n",
+      "6  6  6  \n",
+      "6  6  6  6  \n",
+      "6  6  6  6  6  \n",
+      "6  6  6  6  6  6  \n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Enter a string : \")\n",
+    "s = input()\n",
+    "print(\" Enter a number\")\n",
+    "n= int(input())\n",
+    "\n",
+    "for i in range(1,n+1) :\n",
+    "    for j in range(1,i+1) :\n",
+    "        print(s,end=\"  \")\n",
+    "    print()    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7ce525ae",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#q2 - \n",
+    "\n",
+    " #         ineruon\n",
+    " #   ineruon      ineruon\n",
+    "#ineruon\t\tineruon \tineruon\n",
+    "#\tineruon\t\t ineruon\n",
+    "#\t\t  ineruon\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "f82b5233",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "           s           \n"
+     ]
+    }
+   ],
+   "source": [
+    "x=\" \"\n",
+    "print(x*,\"s\",x*10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "738af6f0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4]\n",
+      "['ineuron', 'data science ']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#q3)l = [[1,2,3,4] , (2,3,4,5,6) , (3,4,5,6,7) , set([23,4,5,45,4,4,5,45,45,4,5]) , {'k1' :\"sudh\" , \"k2\" : \"ineuron\",\"k3\":\n",
+    "      #      \"kumar\" , 3:6 , 7:8} , [\"ineuron\" , \"data science \"]]\n",
+    "    #Try to extract all the list entity \n",
+    "    \n",
+    "l = [[1,2,3,4] , (2,3,4,5,6) , (3,4,5,6,7) , set([23,4,5,45,4,4,5,45,45,4,5]) , {'k1' :\"sudh\" , \"k2\" : \"ineuron\",\"k3\":   \"kumar\" , 3:6 , 7:8} , [\"ineuron\" , \"data science \"]]\n",
+    "for i in l :\n",
+    "    if type(i) == list :\n",
+    "        print(i)  \n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "3f7decc8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'k1': 'sudh', 'k2': 'ineuron', 'k3': 'kumar', 3: 6, 7: 8}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#q4 : Try to extract all the dict enteties\n",
+    "for i in l :\n",
+    "    if type(i) == dict :\n",
+    "        print(i)  \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "d8ff1798",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(2, 3, 4, 5, 6)\n",
+      "(3, 4, 5, 6, 7)\n"
+     ]
+    }
+   ],
+   "source": [
+    "#q5 : Try to extract all the tuples entities\n",
+    "for i in l :\n",
+    "    if type(i) == tuple :\n",
+    "        print(i)  \n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "867dea7d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "45\n",
+      "4\n",
+      "5\n",
+      "23\n",
+      "3\n",
+      "7\n",
+      "6\n",
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "#q6 : Try to extract all the numerical data it may b a part of dict key and values \n",
+    "\n",
+    "l = [[1,2,3,4] , (2,3,4,5,6) , (3,4,5,6,7) , set([23,4,5,45,4,4,5,45,45,4,5]) , {'k1' :\"sudh\" , \"k2\" : \"ineuron\",\"k3\":   \"kumar\" , 3:6 , 7:8} , [\"ineuron\" , \"data science \"]]\n",
+    "\n",
+    "for i in l :\n",
+    "    if type(i) == dict :\n",
+    "        k =  i.keys()\n",
+    "        m = i.values()\n",
+    "        for s in k:\n",
+    "            if type(s) == int :\n",
+    "                print(s)\n",
+    "        for r in m :\n",
+    "            if type(r) == int :\n",
+    "                print(r)\n",
+    "       \n",
+    "    else :       \n",
+    "        for j in i :\n",
+    "            if type(j) == int:\n",
+    "                print(j)\n",
+    "\n",
+    "    \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 97,
+   "id": "6aa85ec9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 +\n",
+      "2 +\n",
+      "3 +\n",
+      "4 +\n",
+      "2 +\n",
+      "3 +\n",
+      "4 +\n",
+      "5 +\n",
+      "6 +\n",
+      "3 +\n",
+      "4 +\n",
+      "5 +\n",
+      "6 +\n",
+      "7 +\n",
+      "45 +\n",
+      "4 +\n",
+      "5 +\n",
+      "23 +\n",
+      "3\n",
+      "+\n",
+      "7\n",
+      "+\n",
+      "6 +\n",
+      "8 +\n",
+      "The summation of all the numbers is:\n",
+      "156\n"
+     ]
+    }
+   ],
+   "source": [
+    "#q7) get the summation of all the numeric data\n",
+    "l = [[1,2,3,4] , (2,3,4,5,6) , (3,4,5,6,7) , set([23,4,5,45,4,4,5,45,45,4,5]) , {'k1' :\"sudh\" , \"k2\" : \"ineuron\",\"k3\":   \"kumar\" , 3:6 , 7:8} , [\"ineuron\" , \"data science \"]]\n",
+    "su = 0\n",
+    "for i in l :\n",
+    "    if type(i) == dict :\n",
+    "        k =  i.keys()\n",
+    "        m = i.values()\n",
+    "        for s in k:\n",
+    "            if type(s) == int :\n",
+    "                su = su + s\n",
+    "                print(s)\n",
+    "                print(\"+\")\n",
+    "        for r in m :\n",
+    "            if type(r) == int :\n",
+    "                su = su + r\n",
+    "                print(r,\"+\")\n",
+    "                \n",
+    "       \n",
+    "    else :       \n",
+    "        for j in i :\n",
+    "            if type(j) == int:\n",
+    "                su = su + j\n",
+    "                print(j,\"+\")\n",
+    "                \n",
+    "print(\"The summation of all the numbers is:\")\n",
+    "print(su)  \n",
+    "    \n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "c334b5a1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "#q8 : Try to filter out all the odd values out of all numeric data which is a part of a list. \n",
+    "l = [[1,2,3,4] , (2,3,4,5,6) , (3,4,5,6,7) , set([23,4,5,45,4,4,5,45,45,4,5]) , {'k1' :\"sudh\" , \"k2\" : \"ineuron\",\"k3\":   \"kumar\" , 3:6 , 7:8} , [\"ineuron\" , \"data science \"]]\n",
+    "for i in l :\n",
+    "    if type(i) == list :\n",
+    "        for j in i :\n",
+    "            if type(j) == int :\n",
+    "                if(j%2!=0) :\n",
+    "                    print(j)\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "5892b64c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[[1, 2, 3, 4],\n",
+       " (2, 3, 4, 5, 6),\n",
+       " (3, 4, 5, 6, 7),\n",
+       " {4, 5, 23, 45},\n",
+       " {'k1': 'sudh', 'k2': 'ineuron', 'k3': 'kumar', 3: 6, 7: 8},\n",
+       " ['ineuron', 'data science ']]"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#q9 : Try to extract \"ineuron\" out of this data\n",
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "11458d4c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "key elements:  k2\n",
+      "value elements  : ineuron\n",
+      "ineuron\n",
+      " The postion of the value is: l [ 5 ] [ 0 ]\n"
+     ]
+    }
+   ],
+   "source": [
+    "l = [[1,2,3,4] , (2,3,4,5,6) , (3,4,5,6,7) , set([23,4,5,45,4,4,5,45,45,4,5]) , {'k1' :\"sudh\" , \"k2\" : \"ineuron\",\"k3\":   \"kumar\" , 3:6 , 7:8} , [\"ineuron\" , \"data science \"]]\n",
+    "for i in l :\n",
+    "    if type(i) == dict :\n",
+    "        d1 = i\n",
+    "        for key,value in d1.items() :\n",
+    "             if key == 'ineuron' or value == 'ineuron':\n",
+    "                    print(\"key elements: \", key)\n",
+    "                    print(\"value elements  :\", value)\n",
+    "    else :\n",
+    "        if (type(i) == list or type(i) == tuple or type(i) == set) :\n",
+    "            for j in i :\n",
+    "                if j == 'ineuron':\n",
+    "                    print(j)\n",
+    "                    a =  (l.index(i))\n",
+    "                    b =  (i.index(j))\n",
+    "                    print(\" The postion of the value is: l [\", a ,\"]\" ,\"[\" , b ,\"]\")\n",
+    "                \n",
+    "            \n",
+    "                \n",
+    "                           \n",
+    "\n",
+    "\n",
+    "       \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "08b9bc5a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4, 2, 3, 4, 5, 6, 3, 4, 5, 6, 7, 45, 4, 5, 23, 'k1', 'k2', 'k3', 3, 7, 'ineuron', 'data science ']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#q15)Try to unwrap all the collection inside collection and create a flat list \n",
+    "    \n",
+    "l = [[1,2,3,4] , (2,3,4,5,6) , (3,4,5,6,7) , set([23,4,5,45,4,4,5,45,45,4,5]) , {'k1' :\"sudh\" , \"k2\" : \"ineuron\",\"k3\":   \"kumar\" , 3:6 , 7:8} , [\"ineuron\" , \"data science \"]]\n",
+    "l1=[]\n",
+    "for i in l :\n",
+    "    for j in i :\n",
+    "        l1.append(j)\n",
+    "print(l1)    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "0d57ce63",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'int' object is not iterable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m~\\AppData\\Local\\Temp/ipykernel_12960/295537049.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[1;31m#q10 :Try to find out the number of occurances of all the data.\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      2\u001b[0m \u001b[0mcount\u001b[0m \u001b[1;33m=\u001b[0m \u001b[1;36m0\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 3\u001b[1;33m \u001b[1;32mfor\u001b[0m \u001b[0mi\u001b[0m \u001b[1;32min\u001b[0m \u001b[0mlen\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0ml1\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      4\u001b[0m     \u001b[1;32mfor\u001b[0m \u001b[0mj\u001b[0m \u001b[1;32min\u001b[0m \u001b[0mlen\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0ml1\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      5\u001b[0m         \u001b[1;32mif\u001b[0m \u001b[0ml1\u001b[0m\u001b[1;33m[\u001b[0m\u001b[0mi\u001b[0m\u001b[1;33m]\u001b[0m \u001b[1;33m==\u001b[0m  \u001b[0ml1\u001b[0m\u001b[1;33m[\u001b[0m\u001b[0mj\u001b[0m\u001b[1;33m]\u001b[0m \u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mTypeError\u001b[0m: 'int' object is not iterable"
+     ]
+    }
+   ],
+   "source": [
+    "#q10 :Try to find out the number of occurances of all the data.\n",
+    "count = 0\n",
+    "for i in len(l1):\n",
+    "    for j in len(l1):\n",
+    "        if l1[i] ==  l1[j] :\n",
+    "            count += 1\n",
+    "        else :\n",
+    "            pass\n",
+    "    print(i,   \":\"  ,count)\n",
+    "            \n",
+    "        \n",
+    "           \n",
+    "         \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "e45e67b3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "k1\n",
+      "k2\n",
+      "k3\n",
+      "ineuron\n",
+      "data science \n"
+     ]
+    }
+   ],
+   "source": [
+    "#q12 : Try to filter out all the string data \n",
+    "l1 = [1, 2, 3, 4, 2, 3, 4, 5, 6, 3, 4, 5, 6, 7, 45, 4, 5, 23, 'k1', 'k2', 'k3', 3, 7, 'ineuron', 'data science ']\n",
+    "for i in range(len(l1)) :\n",
+    "    if type(l1[i]) == str :\n",
+    "        print(l1[i])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 94,
+   "id": "ac0964e3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "k1\n",
+      "k2\n",
+      "k3\n",
+      "ineuron\n"
+     ]
+    }
+   ],
+   "source": [
+    "#q13 : Try to Find  out alphanum in data\n",
+    "l1 = [1, 2, 3, 4, 2, 3, 4, 5, 6, 3, 4, 5, 6, 7, 45, 4, 5, 23, 'k1', 'k2', 'k3', 3, 7, 'ineuron', 'data science ']\n",
+    "for i in range(len(l1)):\n",
+    "    if type(l1[i]) == str :\n",
+    "        if (l1[i].isalnum()) == True :\n",
+    "             print(l1[i])\n",
+    "        \n",
+    "    \n",
+    "    \n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 96,
+   "id": "bfb9f5a8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "*\n",
+      "2\n",
+      "*\n",
+      "3\n",
+      "*\n",
+      "4\n",
+      "*\n",
+      "2\n",
+      "*\n",
+      "3\n",
+      "*\n",
+      "4\n",
+      "*\n",
+      "5\n",
+      "*\n",
+      "6\n",
+      "*\n",
+      "3\n",
+      "*\n",
+      "4\n",
+      "*\n",
+      "5\n",
+      "*\n",
+      "6\n",
+      "*\n",
+      "7\n",
+      "*\n",
+      "45\n",
+      "*\n",
+      "4\n",
+      "*\n",
+      "5\n",
+      "*\n",
+      "23\n",
+      "*\n",
+      "3\n",
+      "*\n",
+      "7\n",
+      "*\n",
+      "6\n",
+      "*\n",
+      "8\n",
+      "*\n",
+      "The product of all the numbers is:\n",
+      "908605071360000\n"
+     ]
+    }
+   ],
+   "source": [
+    "#q14 : Try to find out multiplication of all numeric value in  the individual collection inside dataset \n",
+    "l = [[1,2,3,4] , (2,3,4,5,6) , (3,4,5,6,7) , set([23,4,5,45,4,4,5,45,45,4,5]) , {'k1' :\"sudh\" , \"k2\" : \"ineuron\",\"k3\":   \"kumar\" , 3:6 , 7:8} , [\"ineuron\" , \"data science \"]]\n",
+    "pro = 1\n",
+    "for i in l :\n",
+    "    if type(i) == dict :\n",
+    "        k =  i.keys()\n",
+    "        m = i.values()\n",
+    "        for s in k:\n",
+    "            if type(s) == int :\n",
+    "                pro = pro * s\n",
+    "                print(s)\n",
+    "                print(\"*\")\n",
+    "        for r in m :\n",
+    "            if type(r) == int :\n",
+    "                pro = pro * r\n",
+    "                print(r)\n",
+    "                print(\"*\")\n",
+    "       \n",
+    "    else :       \n",
+    "        for j in i :\n",
+    "            if type(j) == int:\n",
+    "                pro = pro * j\n",
+    "                print(j)\n",
+    "                print(\"*\")\n",
+    "print(\"The product of all the numbers is:\")\n",
+    "print(pro)  \n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "36862a26",
+   "metadata": {},
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
